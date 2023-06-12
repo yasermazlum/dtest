@@ -16,8 +16,9 @@ namespace WebProj
                     policy.AllowAnyHeader()
                           .AllowAnyMethod()
                           .AllowAnyOrigin()
-                          .SetIsOriginAllowed(origin => true)}
-                );
+                          .SetIsOriginAllowed(origin => true);
+                }
+                ) ; 
             });
 
             builder.Services.AddControllers();
